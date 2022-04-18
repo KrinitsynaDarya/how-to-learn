@@ -170,7 +170,7 @@
 .table__heading {
   margin: 0;
   padding: 0;
-  line-height: 15px;
+  line-height: 1.15; /* исправлено на значение по брифу */
   font-size: 24px;
   font-weight: bold;
 }
@@ -186,8 +186,14 @@
 .feynman {
   padding-top: 100px;
   box-sizing: border-box;
-  height: 890px;
+  min-height: 890px; /* исправлено имя свойства */
   background-color: #f2f2f2;
+
+  background-image: url(/images/feynman.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 867px 637px;
+
   position: relative;
 }
 
@@ -222,13 +228,14 @@
   top: 50%;
 }
 
-.feynman__main-illustration {
+/* изображение заменено на декоративное и перенесено на фон */
+/*.feynman__main-illustration {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 867px;
   height: 637px;
-}
+}*/
 
 .kaufman {
   padding: 90px 0;
@@ -241,23 +248,25 @@
 .section-title_theme_dark {
   margin: 0 auto 20px;
   /*вынести в отдельный класс и замиксовать*/
-  width: 60%;
+  /* удалены дублирующие стили из можификатора */
+  /*width: 60%;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
-  font-weight: bold;
+  font-weight: bold;*/
   color: white;
   position: relative;
   z-index: 1;
 }
 
 .section-subtitle_theme_dark {
-  width: 60%;
   margin: auto;
+  /* удалены дублирующие стили из можификатора */
+  /*width: 60%;  
   text-align: center;
   line-height: 34px;
   font-size: 24px;
-  font-weight: normal;
+  font-weight: normal;*/
   color: white;
   position: relative;
   z-index: 1;
@@ -265,10 +274,11 @@
 
 .table__heading_theme_dark {
   margin: 0 auto 0;
-  padding: 0;
+  /* удалены дублирующие стили из можификатора */
+  /*padding: 0;
   line-height: 1.15;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: bold;*/
 }
 
 .table_theme_dark {
@@ -284,11 +294,15 @@
 }
 
 .table__text_theme_dark {
-  margin: 20px 0 0;
-  padding: 0;
+   /* удалены дублирующие стили из можификатора */
+  /*margin: 20px 0 0;
+  padding: 0;*/
 }
 
 .kaufman__triangle {
+  background-image: url(/images/kaufman-triangle.svg);
+  background-size: contain;
+
   position: absolute;
   z-index: 0;
   top: 0;
@@ -297,7 +311,8 @@
   height: 877px;
 }
 
-footer {
+ /*правило для селектора исправлено на правило для класса*/
+.footer {
   padding-top: 60px;
   padding-bottom: 40px;
   box-sizing: border-box;
@@ -368,6 +383,8 @@ footer {
   padding: 0;
   display: flex;
   flex-direction: column;
+
+  list-style-type: none;
 }
 
 .footer__column-link {
