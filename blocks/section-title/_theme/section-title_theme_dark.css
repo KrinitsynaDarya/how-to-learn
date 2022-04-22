@@ -1,0 +1,7 @@
+.section-title_theme_dark {
+    margin: 0 auto 20px;
+    /*вынести в отдельный класс и замиксовать*/
+    color: white;
+    position: relative;
+    z-index: 1;
+  }

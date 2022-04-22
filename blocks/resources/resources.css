@@ -1,0 +1,16 @@
+.resources {
+    padding: 100px 0 217px;
+  }
+  
+  .resources_logo-zone {
+    margin: 80px auto 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1100px;
+  }
+  
+  .resources__logo {
+    width: 270px;
+    height: 38px;
+  }
