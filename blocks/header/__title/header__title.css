@@ -1,4 +1,5 @@
 .header__title {
+  /* 3 обнулены внешние отступы*/
     margin: 0 0 0 64px;
     width: 100%;
     max-width: 730px;

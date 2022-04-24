@@ -5,6 +5,7 @@
     bottom: 0;
     width: 765px;
     height: 608px;
+    /* 2 добавлены новые свойства для сохранения пропорций главного изображения*/
     object-fit: contain;
     object-position: bottom right;
   }
